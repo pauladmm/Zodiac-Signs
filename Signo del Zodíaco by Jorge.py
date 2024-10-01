@@ -1,30 +1,31 @@
 def signo_zodiaco(dia, mes):
     if (mes == 12 and dia >= 22) or (mes == 1 and dia <= 20):
-        return"Eres Capricornio"
+        return "Eres Capricornio"
     elif (mes == 1 and dia >= 21) or (mes == 2 and dia <= 19):
-        return"Eres Acuario"
-    elif (mes == 2 and dia >=20) or (mes == 3 and dia <=20):
-        return"Eres Piscis"
+        return "Eres Acuario"
+    elif (mes == 2 and dia >= 20) or (mes == 3 and dia <= 20):
+        return "Eres Piscis"
     elif (mes == 3 and dia >= 21) or (mes == 4 and dia <= 20):
-        return"Eres Aries"
+        return "Eres Aries"
     elif (mes == 4 and dia >= 21) or (mes == 5 and dia <= 20):
-        return"Eres Tauro"
+        return "Eres Tauro"
     elif (mes == 5 and dia >= 21) or (mes == 6 and dia <= 21):
-        return"Eres Géminis"
+        return "Eres Géminis"
     elif (mes == 6 and dia >= 22) or (mes == 7 and dia <= 23):
-        return"Eres Cancer"
+        return "Eres Cancer"
     elif (mes == 7 and dia >= 24) or (mes == 8 and dia <= 23):
-        return"Eres Leo"
+        return "Eres Leo"
     elif (mes == 8 and dia >= 24) or (mes == 9 and dia <= 23):
-        return"Eres Virgo"
+        return "Eres Virgo"
     elif (mes == 9 and dia >= 24) or (mes == 10 and dia <= 22):
-        return"Eres Libra"
+        return "Eres Libra"
     elif (mes == 10 and dia >= 23) or (mes == 11 and dia <= 22):
-        return"Eres Escorpio"
+        return "Eres Escorpio"
     elif (mes == 11 and dia >= 23) or (mes == 12 and dia <= 21):
-        return"Eres Sagitario"
+        return "Eres Sagitario"
     else:
-        return"No tienes signo."
+        return "No tienes signo."
+
 
 try:
     dia_nacimiento = int(input("Ingresa el día de tu cumpleaños: "))
@@ -39,3 +40,5 @@ else:
     # Obtener y mostrar el signo
     signo = signo_zodiaco(dia_nacimiento, mes_nacimiento)
     print(f"{signo}.")
+
+print("Guaperas")
